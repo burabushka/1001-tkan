@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="ru" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>1001 Ткань - B2B прототип</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#252525',
+            muted: '#7D7D7D',
+            gold: '#F2D784',
+            violet: '#4F4A67',
+            coral: '#F16151',
+            paper: '#F9F9F9',
+            line: '#E8E1D0'
+          },
+          fontFamily: {
+            sans: ['Inter', 'Urbanist', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body { font-family: Inter, Urbanist, system-ui, sans-serif; }
+    .display { font-family: Urbanist, Inter, system-ui, sans-serif; letter-spacing: 0; }
+    .grid-guides {
+      background-image: linear-gradient(to right, rgba(242, 215, 132, .12) 1px, transparent 1px);
+      background-size: calc((100% - 22rem) / 12) 100%;
+      background-position: 11rem 0;
+    }
+  </style>
+</head>
+<body class="bg-white text-ink antialiased">
+  <header class="sticky top-0 z-50 h-20 border-b border-line bg-white/95 backdrop-blur">
+    <div class="mx-auto grid h-full max-w-[1440px] grid-cols-12 items-center gap-6 px-6">
+      <a href="#" class="col-span-7 flex items-center gap-3 md:col-span-2">
+        <span class="flex h-8 w-11 items-center justify-center rounded-md bg-ink text-[10px] font-semibold text-white">1001</span>
+        <span class="display text-lg font-semibold">1001 ТКАНЬ</span>
+      </a>
+      <nav class="col-span-6 hidden items-center justify-center gap-10 text-sm text-muted md:flex">
+        <a href="#how-it-works" class="hover:text-ink">Этапы работы</a>
+        <a href="#calculator" class="hover:text-ink">Калькулятор</a>
+        <a href="#reviews" class="hover:text-ink">Отзывы</a>
+        <a href="#faq" class="hover:text-ink">FAQ</a>
+      </nav>
+      <div class="col-span-5 flex items-center justify-end gap-5 text-sm md:col-span-3 md:col-start-10">
+        <a href="tel:88000000000" class="hidden font-medium md:block">8 (800) 000-00-00</a>
+        <a href="#calculator" class="rounded-full border border-line px-5 py-2 text-ink hover:bg-paper">Заказать звонок</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="grid-guides overflow-hidden bg-white pb-16 pt-24">
+      <div class="mx-auto max-w-[1440px] px-6">
+        <div class="grid grid-cols-12 gap-6">
+          <div class="col-span-12 lg:col-span-6">
+            <h1 class="display text-5xl font-semibold leading-[1.05] md:text-[62px]">От метража<br>до тиража.</h1>
+            <p class="mt-8 max-w-xl text-xl leading-8 text-muted">Заказывайте ткани оптом для мастеров и производств.</p>
+            <div class="mt-10 flex flex-wrap gap-4">
+              <a href="#calculator" class="rounded-full bg-coral px-8 py-3 text-sm font-medium text-white">Подобрать</a>
+              <a href="#catalog" class="rounded-full border border-line bg-white px-8 py-3 text-sm font-medium text-ink">Каталог</a>
+            </div>
+            <ul class="mt-8 grid max-w-2xl grid-cols-3 gap-3 text-xs text-ink sm:gap-4 sm:text-sm">
+              <li class="flex items-start gap-3">
+                <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-coral"></span>
+                <span><b class="display font-semibold">5.000+ рулонов</b><br><span class="text-muted">на складе</span></span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-coral"></span>
+                <span><b class="display font-semibold">Образцы за 3 дня</b><br><span class="text-muted">курьером</span></span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-coral"></span>
+                <span><b class="display font-semibold">Скидка 37%*</b><br><span class="text-muted">от 1 рулона</span></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="relative col-span-12 min-h-[560px] lg:col-span-6">
+            <div class="absolute inset-x-0 top-28 h-[420px] rounded-[50px] bg-gold"></div>
+            <div class="absolute right-2 top-0 h-[420px] w-[72%] rounded-[50px] bg-gray-200 flex items-center justify-center text-sm text-muted">image / fabric placeholder</div>
+            <div class="absolute left-2 top-40 h-[310px] w-[64%] rounded-[36px] bg-gray-200 flex items-center justify-center text-sm text-muted">image / roll placeholder</div>
+            <div class="absolute bottom-4 left-8 w-[78%] rounded-[30px] bg-violet p-7 text-white">
+              <div class="flex gap-3">
+                <a href="#calculator" class="rounded-full bg-coral px-6 py-2 text-sm">Подобрать</a>
+                <a href="#catalog" class="rounded-full bg-white px-6 py-2 text-sm text-ink">Каталог</a>
+              </div>
+              <h2 class="display mt-10 text-xl font-semibold text-gold">Партия «Aurora Textile»</h2>
+              <p class="mt-3 max-w-sm text-sm leading-6">Подбор основы, оттенка и метража под задачу производства.</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="mt-8 text-sm italic text-muted">* при покупке от одного рулона</p>
+      </div>
+    </section>
+
+    <section class="px-6 py-16">
+      <div class="mx-auto grid max-w-[1440px] grid-cols-12">
+        <div class="col-span-12 grid grid-cols-1 divide-y divide-muted/30 rounded-[50px] bg-ink p-10 text-center text-white md:grid-cols-3 md:divide-x md:divide-y-0">
+          <div class="py-6">
+            <div class="display text-6xl font-semibold text-gold">28 лет</div>
+            <p class="mt-4 text-lg">На рынке текстиля</p>
+          </div>
+          <div class="py-6">
+            <div class="display text-6xl font-semibold text-gold">100%</div>
+            <p class="mt-4 text-lg">Физическое наличие в РФ</p>
+          </div>
+          <div class="py-6">
+            <div class="display text-6xl font-semibold text-gold">24 часа</div>
+            <p class="mt-4 text-lg">Скорость отгрузки</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white px-6 py-20">
+      <div class="mx-auto max-w-[1440px]">
+        <h2 class="display text-center text-5xl font-semibold">Стандарты качества</h2>
+        <div class="mt-14 grid grid-cols-12 gap-6">
+          <article class="col-span-12 rounded-[34px] border border-line bg-paper p-10 md:col-span-6">
+            <div class="grid grid-cols-12 gap-6">
+              <div class="col-span-3 flex h-28 w-28 items-center justify-center rounded-full bg-white text-4xl font-semibold text-gold">P</div>
+              <div class="col-span-9">
+                <h3 class="display text-2xl font-semibold">Цвета без сюрпризов</h3>
+                <p class="mt-4 text-sm leading-7 text-muted">Сверяем оттенки и партии, фиксируем PANTONE-ориентир для повторяемого результата.</p>
+              </div>
+            </div>
+          </article>
+          <article class="col-span-12 rounded-[34px] border border-line bg-paper p-10 md:col-span-6">
+            <div class="grid grid-cols-12 gap-6">
+              <div class="col-span-3 flex h-28 w-28 items-center justify-center rounded-full bg-white text-4xl font-semibold text-gold">S</div>
+              <div class="col-span-9">
+                <h3 class="display text-2xl font-semibold">Эксклюзив и база в одном месте</h3>
+                <p class="mt-4 text-sm leading-7 text-muted">Базовые ткани, редкие фактуры и премиальные позиции уровня Sophie Hallette.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white px-6 py-20">
+      <div class="mx-auto max-w-[1440px]">
+        <h2 class="display text-center text-5xl font-semibold">B2B сервис и логистика</h2>
+        <div class="mt-14 grid grid-cols-12 gap-6">
+          <article class="col-span-12 rounded-[34px] bg-paper p-8 md:col-span-3">
+            <div class="h-16 w-16 rounded-full bg-white"></div>
+            <h3 class="display mt-8 text-xl font-semibold">Персональный менеджер</h3>
+            <p class="mt-3 text-sm leading-6 text-muted">Подберет ткань под изделие, сроки и бюджет.</p>
+          </article>
+          <article class="col-span-12 rounded-[34px] bg-violet p-8 text-white md:col-span-3">
+            <div class="h-16 w-16 rounded-full bg-gold"></div>
+            <h3 class="display mt-8 text-xl font-semibold text-gold">Воспроизводство партий</h3>
+            <p class="mt-3 text-sm leading-6">Повторяем раскупленную ткань от 50 м.</p>
+          </article>
+          <article class="col-span-12 rounded-[34px] bg-paper p-8 md:col-span-3">
+            <div class="h-16 w-16 rounded-full bg-white"></div>
+            <h3 class="display mt-8 text-xl font-semibold">Белые документы</h3>
+            <p class="mt-3 text-sm leading-6 text-muted">Безнал, счета, закрывающие, ФЗ-53.</p>
+          </article>
+          <article class="col-span-12 rounded-[34px] bg-paper p-8 md:col-span-3">
+            <div class="h-16 w-16 rounded-full bg-white"></div>
+            <h3 class="display mt-8 text-xl font-semibold">Тяжелая логистика</h3>
+            <p class="mt-3 text-sm leading-6 text-muted">Отгрузка рулонов через ТК по РФ.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="bg-white px-6 py-20">
+      <div class="mx-auto max-w-[1440px]">
+        <h2 class="display text-center text-5xl font-semibold">Как купить ткань оптом за 4 шага</h2>
+        <div class="mt-14 grid grid-cols-12 gap-6">
+          <article class="col-span-12 rounded-[30px] border border-line bg-paper p-8 md:col-span-3">
+            <div class="display text-6xl font-semibold text-gold">1</div>
+            <h3 class="mt-6 text-xl font-semibold">Запрос</h3>
+            <p class="mt-3 text-sm text-muted">Опишите изделие, ткань и объем.</p>
+          </article>
+          <article class="col-span-12 rounded-[30px] border border-line bg-paper p-8 md:col-span-3">
+            <div class="display text-6xl font-semibold text-gold">2</div>
+            <h3 class="mt-6 text-xl font-semibold">Образец</h3>
+            <p class="mt-3 text-sm text-muted">Получите тестовые образцы за 3 дня.</p>
+          </article>
+          <article class="col-span-12 rounded-[30px] border border-line bg-paper p-8 md:col-span-3">
+            <div class="display text-6xl font-semibold text-gold">3</div>
+            <h3 class="mt-6 text-xl font-semibold">Рулон -37%</h3>
+            <p class="mt-3 text-sm text-muted">Активируйте статус оптовика.</p>
+          </article>
+          <article class="col-span-12 rounded-[30px] border border-line bg-paper p-8 md:col-span-3">
+            <div class="display text-6xl font-semibold text-gold">4</div>
+            <h3 class="mt-6 text-xl font-semibold">Отгрузка 24ч</h3>
+            <p class="mt-3 text-sm text-muted">Получите документы и ТК.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="bg-white px-6 py-20">
+      <div class="mx-auto max-w-[1440px]">
+        <h2 class="display text-center text-5xl font-semibold">Отзывы производств и мастеров</h2>
+        <div class="mt-14 grid grid-cols-12 gap-6">
+          <article class="col-span-12 rounded-[34px] border border-line bg-white p-8 md:col-span-4">
+            <p class="text-sm italic leading-7 text-muted">«Подобрали ткань под серию жакетов и быстро отправили образцы. Цвет партии совпал.»</p>
+            <div class="mt-8 flex items-center gap-4">
+              <div class="h-14 w-14 rounded-full bg-gray-200"></div>
+              <b>Ателье Forma</b>
+            </div>
+          </article>
+          <article class="col-span-12 rounded-[34px] border border-line bg-white p-8 md:col-span-4">
+            <p class="text-sm italic leading-7 text-muted">«Оптовый статус от одного рулона удобен, менеджер сразу считает логистику.»</p>
+            <div class="mt-8 flex items-center gap-4">
+              <div class="h-14 w-14 rounded-full bg-gray-200"></div>
+              <b>Студия штор Line</b>
+            </div>
+          </article>
+          <article class="col-span-12 rounded-[34px] border border-line bg-white p-8 md:col-span-4">
+            <p class="text-sm italic leading-7 text-muted">«Повторили раскупленную ткань от 50 м и закрыли документы без лишних вопросов.»</p>
+            <div class="mt-8 flex items-center gap-4">
+              <div class="h-14 w-14 rounded-full bg-gray-200"></div>
+              <b>Decor Pro</b>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="calculator" class="bg-white px-6 py-20">
+      <div class="mx-auto grid max-w-[1440px] grid-cols-12">
+        <div class="col-span-12 rounded-[50px] bg-gold p-8 md:col-span-8 md:col-start-3 md:p-16">
+          <h2 class="display text-center text-5xl font-semibold">Калькулятор оптовой заявки</h2>
+          <div class="mt-12 rounded-[34px] bg-white p-8">
+            <div class="flex flex-wrap gap-4">
+              <button class="tab-btn rounded-full bg-violet px-7 py-3 text-sm text-gold" data-tab="classic">Классическая форма</button>
+              <button class="tab-btn rounded-full border border-line bg-paper px-7 py-3 text-sm text-ink" data-tab="ai">AI-Помощник</button>
+            </div>
+
+            <form id="classic" class="tab-panel mt-10 grid grid-cols-1 gap-7 md:grid-cols-3">
+              <label class="text-sm text-muted">Тип изделия<input class="mt-3 w-full border-b border-line pb-3 text-ink outline-none" placeholder="Платье / шторы"></label>
+              <label class="text-sm text-muted">Ткань<input class="mt-3 w-full border-b border-line pb-3 text-ink outline-none" placeholder="кружево / сатин"></label>
+              <label class="text-sm text-muted">Объем<select class="mt-3 w-full border-b border-line pb-3 text-ink outline-none"><option>1 рулон</option><option>50 м</option><option>Партия</option></select></label>
+              <button type="button" class="rounded-full bg-coral px-8 py-3 text-sm text-white md:col-span-2">Получить оптовый расчет</button>
+            </form>
+
+            <form id="ai" class="tab-panel mt-10 hidden">
+              <label class="text-sm text-muted">Опишите задачу<textarea class="mt-3 min-h-32 w-full rounded-3xl border border-line p-5 text-ink outline-none" placeholder="Например: нужна ткань для 80 платьев, плотная, молочная, без просвета"></textarea></label>
+              <button type="button" id="aiRun" class="mt-6 rounded-full bg-coral px-8 py-3 text-sm text-white">Подобрать через AI</button>
+              <div id="aiLoading" class="mt-6 hidden rounded-3xl bg-paper p-5 text-sm text-muted">AI анализирует запрос...</div>
+              <div id="aiResult" class="mt-6 hidden rounded-3xl bg-violet p-5 text-sm text-white">Рекомендация: сатин премиум, 2 рулона, запросить 3 образца оттенков.</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="bg-white px-6 py-20">
+      <div class="mx-auto max-w-[1440px]">
+        <div class="grid grid-cols-12 gap-6">
+          <div class="col-span-12 md:col-span-4">
+            <h2 class="display text-5xl font-semibold">FAQ и корзина</h2>
+          </div>
+          <div class="col-span-12 space-y-4 md:col-span-8">
+            <article class="faq-item rounded-[28px] border border-line bg-paper p-7">
+              <button class="faq-btn flex w-full items-center justify-between text-left text-xl font-semibold">Статус оптовика от 1 рулона<span class="text-coral">−</span></button>
+              <p class="faq-answer mt-4 text-sm leading-6 text-muted">Да. Скидка активируется при покупке от одного рулона.</p>
+            </article>
+            <article class="faq-item rounded-[28px] border border-line bg-paper p-7">
+              <button class="faq-btn flex w-full items-center justify-between text-left text-xl font-semibold">Получение образцов за 3 дня<span class="text-coral">+</span></button>
+              <p class="faq-answer mt-4 hidden text-sm leading-6 text-muted">Отправляем тестовые образцы курьером по РФ.</p>
+            </article>
+            <article class="faq-item rounded-[28px] border border-line bg-paper p-7">
+              <button class="faq-btn flex w-full items-center justify-between text-left text-xl font-semibold">Воспроизводство раскупленной ткани от 50м<span class="text-coral">+</span></button>
+              <p class="faq-answer mt-4 hidden text-sm leading-6 text-muted">Для повторов фиксируем состав, оттенок и плотность.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="mt-16 grid grid-cols-12">
+          <div class="col-span-12 rounded-[50px] bg-violet p-10 text-white md:col-span-8 md:col-start-3">
+            <div class="grid grid-cols-12 gap-6">
+              <div class="col-span-12 md:col-span-6">
+                <p class="text-gold">Пример заказа</p>
+                <div class="display mt-3 text-6xl font-semibold">22 500 ₽</div>
+              </div>
+              <div class="col-span-12 md:col-span-6">
+                <div class="inline-flex rounded-full bg-green-700 px-6 py-3 text-sm">Статус оптовика активирован</div>
+                <a href="#" class="mt-8 block rounded-full bg-coral px-8 py-3 text-center text-sm">Перейти к оформлению (ФЗ-53 / Безнал)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="px-6 py-16">
+    <div class="mx-auto grid max-w-[1440px] grid-cols-12 gap-6 rounded-[50px] bg-ink p-10 text-white">
+      <div class="col-span-12 md:col-span-4">
+        <h3 class="display text-2xl font-semibold">1001 ТКАНЬ</h3>
+        <p class="mt-8 text-sm leading-7">28 лет на рынке<br>4 магазина<br>Центральный склад</p>
+      </div>
+      <div class="col-span-12 md:col-span-4">
+        <h3 class="display text-xl font-semibold text-gold">Сервис</h3>
+        <p class="mt-8 text-sm leading-7">Подбор ткани<br>Логистика ТК<br>Образцы за 3 дня</p>
+      </div>
+      <div class="col-span-12 md:col-span-4">
+        <h3 class="display text-xl font-semibold text-gold">Реквизиты</h3>
+        <p class="mt-8 text-sm leading-7">8 (800) 000-00-00<br>ИНН / КПП<br>ФЗ-53, безнал</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const buttons = document.querySelectorAll('.tab-btn');
+    const panels = document.querySelectorAll('.tab-panel');
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const target = button.dataset.tab;
+        buttons.forEach((item) => {
+          item.classList.toggle('bg-violet', item === button);
+          item.classList.toggle('text-gold', item === button);
+          item.classList.toggle('bg-paper', item !== button);
+          item.classList.toggle('text-ink', item !== button);
+          item.classList.toggle('border', item !== button);
+          item.classList.toggle('border-line', item !== button);
+        });
+        panels.forEach((panel) => panel.classList.toggle('hidden', panel.id !== target));
+      });
+    });
+
+    document.querySelectorAll('.faq-btn').forEach((button) => {
+      button.addEventListener('click', () => {
+        const answer = button.parentElement.querySelector('.faq-answer');
+        const icon = button.querySelector('span');
+        const isOpen = !answer.classList.contains('hidden');
+        answer.classList.toggle('hidden', isOpen);
+        icon.textContent = isOpen ? '+' : '−';
+      });
+    });
+
+    document.getElementById('aiRun').addEventListener('click', () => {
+      const loading = document.getElementById('aiLoading');
+      const result = document.getElementById('aiResult');
+      loading.classList.remove('hidden');
+      result.classList.add('hidden');
+      setTimeout(() => {
+        loading.classList.add('hidden');
+        result.classList.remove('hidden');
+      }, 700);
+    });
+  </script>
+</body>
+</html>
