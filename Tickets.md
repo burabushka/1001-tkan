@@ -22,13 +22,18 @@
 | Не менять | `index.html`, `DESIGN.md`, `LANDING_DESIGN.md` |
 | Acceptance | Документы созданы, Notion-схема описана, текущее состояние repo зафиксировано, база проверок добавлена |
 
+## Синхронизация с Notion
+Repo хранит верхнеуровневые этапы, scope и решения. Детальная операционная MECE-доска живет в Notion: `1001 ткань - Project Tasks` (`https://app.notion.com/p/9c287eec6a034e3c86817c4849655bc3`).
+
+Ручные статусы в Notion не затирать при синхронизации. На 2026-06-29 в Notion: `Настроить файл AGENTS.md` — `Code Review`, `Разработать Hero-экран по Z-паттерну` — `Done`, остальные MECE-карточки — `To Do`.
+
 ## Очередь задач
 
 | ID | Этап | Задача | Статус | Владелец | Ветка | Scope files | Acceptance |
 |---|---|---|---|---|---|---|---|
 | DOC-001 | Process | Настроить рабочую систему проекта | Review | Codex | `codex/docs-team-system` | Документы процесса | Есть комплект docs для repo + Notion |
 | DES-001 | Design | Привести палитру и шрифты прототипа к `DESIGN.md` | Ready | TBD | `codex/design-brand-alignment` | `index.html`, `Repo_Current_State.md`, `Test_Base.md` | Убраны Furniture-цвета как основа, display-шрифт заменен на Literata |
-| UX-001 | UX | Проверить hero, CTA, форму и FAQ | Backlog | TBD | `codex/ux-main-flow` | `index.html`, `Test_Base.md`, `Known_Issues.md` | Основной путь ведет к заявке/каталогу, FAQ и tabs работают |
+| UX-001 | UX | Проверить hero, CTA, форму и FAQ | In Progress | TBD | `codex/ux-main-flow` | `index.html`, `Test_Base.md`, `Known_Issues.md` | Основной путь ведет к заявке/каталогу, FAQ и tabs работают |
 | CNT-001 | Content | Собрать реальные доказательства и заменить заглушки | Backlog | TBD | `codex/content-proof-assets` | `index.html`, контент-доки | Есть реальные фото/адреса/документы/отзывы или список недостающих материалов |
 | QA-001 | QA | Провести ручную проверку качества | Backlog | TBD | `codex/qa-static-html` | `Test_Base.md`, `Known_Issues.md` | Проверены desktop/mobile, интерактив, доступность |
 | REV-001 | Review | Провести ревью спринта с партнером | Backlog | TBD | `codex/review-sprint-1` | `Project_Plan.md`, `Tickets.md`, `Known_Issues.md` | Зафиксированы решения и следующий спринт |

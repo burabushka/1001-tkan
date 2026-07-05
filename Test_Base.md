@@ -1,9 +1,15 @@
 # Test Base
 
 ## Текущий статус проверок
-Автоматического test/lint/build pipeline сейчас нет, потому что в проекте отсутствует `package.json`.
+В рабочем дереве появился untracked Storybook/Vite/Chromatic pipeline, но статус его принятия в проект еще не зафиксирован отдельным тикетом.
 
 Для текущего статического HTML-прототипа используются ручные проверки и проверки содержимого файлов.
+
+## Наблюдаемые npm-команды
+Команды из untracked `package.json` не использовать как доказательство качества, пока Storybook pipeline не принят отдельным тикетом:
+- `npm run storybook`
+- `npm run build-storybook`
+- `npm run chromatic`
 
 ## DOC-001 checklist
 - [x] `AGENTS.md` создан и остается коротким.
@@ -47,3 +53,5 @@
 - Basic accessibility scan.
 - Visual smoke test desktop/mobile.
 - CSS/JS lint.
+- Storybook smoke/build check.
+- Chromatic visual review.

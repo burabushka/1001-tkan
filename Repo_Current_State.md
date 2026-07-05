@@ -10,7 +10,9 @@
 - Стили: Tailwind CDN через `https://cdn.tailwindcss.com`.
 - Кастомные токены Tailwind заданы inline в `<script>` внутри `index.html`.
 - Интерактив: Vanilla JS в конце `index.html`.
-- Сборки, npm-пакетов и package pipeline сейчас нет.
+- В tracked-архитектуре основной лендинг все еще статический HTML.
+- В рабочем дереве на 2026-06-29 появились untracked Storybook/Vite/Chromatic файлы: `package.json`, `package-lock.json`, `.storybook/`, `stories/`, `storybook-public/`, `start-storybook.cmd`.
+- Storybook pipeline пока не считается принятым/закрытым проектным решением, пока под него нет отдельного тикета или обновленного acceptance.
 
 ## Текущее содержимое
 - `index.html` содержит:
@@ -34,10 +36,11 @@
 - `Known_Issues.md` хранит проблемы вне текущего тикета.
 - `Test_Base.md` хранит ручные и будущие автоматические проверки.
 - `docs/process/Notion_Task_System.md` описывает Notion-доску.
+- Notion-база `1001 ткань - Project Tasks` хранит детальные MECE-задачи; repo остается источником решений и верхнеуровневых этапов.
 
 ## Ограничения
 - Не добавлять зависимости без отдельного тикета и подтверждения человека.
-- Не запускать `npm run test/lint/build`, пока нет `package.json`.
+- Не считать npm/Storybook pipeline принятым без отдельного тикета и проверки.
 - Не менять `index.html` в рамках `DOC-001`.
 - Не чинить найденные визуальные проблемы вне соответствующих тикетов.
 

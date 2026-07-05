@@ -1,0 +1,17 @@
+{
+  "name": "tkani-1001",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "chromatic": "chromatic"
+  },
+  "devDependencies": {
+    "@storybook/html-vite": "^10.4.6",
+    "chromatic": "^17.7.2",
+    "storybook": "^10.4.6",
+    "vite": "^8.1.0"
+  }
+}
