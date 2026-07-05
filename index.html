@@ -12,6 +12,12 @@
           colors: {
             ink: '#252525',
             muted: '#7D7D7D',
+            brandBlue: '#143B8D',
+            deepNavy: '#0B2758',
+            accentRed: '#D42027',
+            lightBlue: '#E6F0FB',
+            softBorder: '#DDE6F4',
+            softText: '#687086',
             gold: '#F2D784',
             violet: '#4F4A67',
             coral: '#F16151',
@@ -32,6 +38,241 @@
       background-image: linear-gradient(to right, rgba(242, 215, 132, .12) 1px, transparent 1px);
       background-size: calc((100% - 22rem) / 12) 100%;
       background-position: 11rem 0;
+    }
+    .hero-b2b {
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 75% 20%, rgba(230, 240, 251, .72), transparent 28%),
+        linear-gradient(115deg, #fff 0%, #fff 58%, #f7faff 100%);
+    }
+    .hero-shell {
+      position: relative;
+      width: min(100%, 916px);
+      margin: 0 auto;
+      overflow: hidden;
+      padding: 42px 24px 44px;
+    }
+    .hero-text {
+      position: relative;
+      z-index: 2;
+    }
+    .hero-media {
+      position: relative;
+      z-index: 1;
+      margin-top: 28px;
+    }
+    .product-visual {
+      filter: drop-shadow(0 22px 28px rgba(11, 39, 88, .14));
+    }
+    .hero-title {
+      font-family: Montserrat, Manrope, Inter, Arial, sans-serif;
+      color: #0B2758;
+      font-size: clamp(40px, 10vw, 54px);
+      font-weight: 800;
+      line-height: 1.07;
+      letter-spacing: 0;
+    }
+      .hero-product-img {
+        width: min(100%, 771px);
+        height: auto;
+        object-fit: contain;
+        z-index: 1;
+    }
+    .hero-spiral {
+      position: absolute;
+      left: 44%;
+      top: 12px;
+      z-index: 0;
+      width: min(34vw, 246px);
+      opacity: .78;
+      pointer-events: none;
+    }
+    .hero-proof {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 26px;
+    }
+    .hero-fact {
+      display: grid;
+      justify-items: center;
+      gap: 7px;
+      color: #143B8D;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1;
+      white-space: nowrap;
+    }
+    .hero-fact svg {
+      width: 36px;
+      height: 36px;
+      overflow: visible;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 22px;
+    }
+    .hero-pill {
+      display: inline-flex;
+      min-height: 38px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 0 28px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1;
+      transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+    }
+    .hero-pill-primary {
+      background: #143B8D;
+      color: #fff;
+    }
+    .hero-pill-primary:hover { background: #0E2F75; }
+    .hero-pill-secondary {
+      border: 1.5px solid #143B8D;
+      background: #fff;
+      color: #143B8D;
+    }
+    .hero-pill-secondary:hover { background: #E6F0FB; }
+    @media (min-width: 700px) {
+      .hero-shell {
+        aspect-ratio: 916 / 494;
+        min-height: auto;
+        padding: 0;
+      }
+      .hero-text {
+        position: static;
+      }
+      .hero-title {
+        position: absolute;
+        left: 5.24%;
+        top: 29.35%;
+        z-index: 2;
+        width: 62.12%;
+        font-size: clamp(44px, 5.9vw, 54px);
+      }
+      .hero-copy {
+        position: absolute;
+        left: 5.24%;
+        top: 55.67%;
+        z-index: 2;
+        width: 47.82%;
+        color: #687086;
+        font-size: clamp(16px, 2vw, 18px);
+        line-height: 1.45;
+      }
+      .hero-media {
+        position: static;
+        margin-top: 0;
+      }
+      .hero-product-img {
+        position: absolute !important;
+        left: 35.37%;
+        top: 0;
+        z-index: 3;
+        width: 84.17%;
+        max-width: none;
+      }
+      .hero-spiral {
+        left: 46.29%;
+        top: 7.29%;
+        width: 26.86%;
+      }
+      .hero-proof {
+        position: absolute;
+        left: 5.24%;
+        top: 72.87%;
+        z-index: 4;
+        margin-top: 0;
+        gap: 14px;
+      }
+      .hero-actions {
+        position: absolute;
+        left: 4.91%;
+        top: 89.07%;
+        z-index: 4;
+        margin-top: 0;
+        gap: 44px;
+      }
+    }
+    @media (min-width: 700px) and (max-width: 1023px) {
+      .hero-shell {
+        height: 560px;
+        aspect-ratio: auto;
+      }
+      .hero-title {
+        left: 40px;
+        top: 88px;
+        width: min(560px, calc(100% - 80px));
+        font-size: clamp(44px, 6.2vw, 52px);
+      }
+      .hero-copy {
+        left: 40px;
+        top: 240px;
+        width: min(440px, calc(100% - 80px));
+        font-size: 17px;
+      }
+      .hero-product-img {
+        left: 44%;
+        top: 70px;
+        width: 82%;
+      }
+      .hero-spiral {
+        left: 50%;
+        top: 48px;
+        width: 210px;
+      }
+      .hero-proof {
+        left: 40px;
+        top: 366px;
+      }
+      .hero-actions {
+        left: 40px;
+        top: 468px;
+      }
+    }
+    @media (max-width: 699px) {
+      .hero-shell {
+        overflow: visible;
+      }
+      .hero-copy {
+        margin-top: 20px;
+        max-width: 430px;
+        color: #687086;
+        font-size: 18px;
+        line-height: 1.45;
+      }
+      .hero-spiral {
+        left: 50%;
+        top: 170px;
+        width: 190px;
+      }
+      .hero-proof {
+        justify-content: space-between;
+      }
+      .hero-actions {
+        gap: 12px;
+      }
+      .hero-pill {
+        flex: 1 1 140px;
+      }
+    }
+    @media (max-width: 430px) {
+      .hero-proof {
+        gap: 11px;
+      }
+      .hero-fact {
+        font-size: 11px;
+      }
+      .hero-fact svg {
+        width: 32px;
+        height: 32px;
+      }
     }
   </style>
 </head>
@@ -56,66 +297,63 @@
   </header>
 
   <main>
-    <section class="grid-guides overflow-hidden bg-white pb-16 pt-24">
-      <div class="mx-auto max-w-[1440px] px-6">
-        <div class="grid grid-cols-12 gap-6">
-          <div class="col-span-12 lg:col-span-6">
-            <h1 class="display text-5xl font-semibold leading-[1.05] md:text-[62px]">От метража<br>до тиража.</h1>
-            <p class="mt-8 max-w-xl text-xl leading-8 text-muted">Заказывайте ткани оптом для мастеров и производств.</p>
-            <div class="mt-10 flex flex-wrap gap-4">
-              <a href="#calculator" class="rounded-full bg-coral px-8 py-3 text-sm font-medium text-white">Подобрать</a>
-              <a href="#catalog" class="rounded-full border border-line bg-white px-8 py-3 text-sm font-medium text-ink">Каталог</a>
-            </div>
-            <ul class="mt-8 grid max-w-2xl grid-cols-3 gap-3 text-xs text-ink sm:gap-4 sm:text-sm">
-              <li class="flex items-start gap-3">
-                <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-coral"></span>
-                <span><b class="display font-semibold">5.000+ рулонов</b><br><span class="text-muted">на складе</span></span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-coral"></span>
-                <span><b class="display font-semibold">Образцы за 3 дня</b><br><span class="text-muted">курьером</span></span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-coral"></span>
-                <span><b class="display font-semibold">Скидка 37%*</b><br><span class="text-muted">от 1 рулона</span></span>
-              </li>
-            </ul>
-          </div>
+    <section class="hero-b2b bg-white">
+      <div class="hero-shell mx-auto">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            От тестового<br>метража до рулона
+          </h1>
+          <p class="hero-copy">
+            Помогаем брендам, ателье и производствам находить подходящие ткани, проверять образцы и запускать поставки без срыва сроков.
+          </p>
+        </div>
 
-          <div class="relative col-span-12 min-h-[560px] lg:col-span-6">
-            <div class="absolute inset-x-0 top-28 h-[420px] rounded-[50px] bg-gold"></div>
-            <div class="absolute right-2 top-0 h-[420px] w-[72%] rounded-[50px] bg-gray-200 flex items-center justify-center text-sm text-muted">image / fabric placeholder</div>
-            <div class="absolute left-2 top-40 h-[310px] w-[64%] rounded-[36px] bg-gray-200 flex items-center justify-center text-sm text-muted">image / roll placeholder</div>
-            <div class="absolute bottom-4 left-8 w-[78%] rounded-[30px] bg-violet p-7 text-white">
-              <div class="flex gap-3">
-                <a href="#calculator" class="rounded-full bg-coral px-6 py-2 text-sm">Подобрать</a>
-                <a href="#catalog" class="rounded-full bg-white px-6 py-2 text-sm text-ink">Каталог</a>
-              </div>
-              <h2 class="display mt-10 text-xl font-semibold text-gold">Партия «Aurora Textile»</h2>
-              <p class="mt-3 max-w-sm text-sm leading-6">Подбор основы, оттенка и метража под задачу производства.</p>
-            </div>
+        <div class="hero-media">
+          <img src="assets/hero-spiral.png" alt="" class="hero-spiral" />
+          <img src="assets/hero-product.png" alt="Рулоны ткани и карта образцов" class="hero-product-img product-visual" />
+        </div>
+
+        <div class="hero-proof" aria-label="Преимущества">
+          <div class="hero-fact">
+            <svg viewBox="0 0 44 44" fill="none" aria-hidden="true">
+              <circle cx="22" cy="18" r="10" fill="#EEF4FC"/>
+              <circle cx="22" cy="18" r="7" stroke="#143B8D" stroke-width="2"/>
+              <path d="M22 13.5l1.5 3 3.3.5-2.4 2.3.6 3.3-3-1.6-3 1.6.6-3.3-2.4-2.3 3.3-.5 1.5-3Z" fill="#D42027" stroke="#143B8D" stroke-width="1.2"/>
+              <path d="M15.5 26.5l-2.2 10 8.7-5.1 8.7 5.1-2.2-10" stroke="#143B8D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>28 лет опыта</span>
+          </div>
+          <div class="hero-fact">
+            <svg viewBox="0 0 44 44" fill="none" aria-hidden="true">
+              <circle cx="22" cy="20" r="15" fill="#EEF4FC"/>
+              <path d="M10 19.5 22 10l12 9.5" stroke="#143B8D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M13 18.5v14h18v-14" stroke="#143B8D" stroke-width="2.4" stroke-linejoin="round"/>
+              <path d="M17 25h10M17 30h10M17 25v7M22 25v7M27 25v7" stroke="#143B8D" stroke-width="1.8" stroke-linecap="round"/>
+              <circle cx="31" cy="12" r="4" fill="#fff" stroke="#143B8D" stroke-width="2"/>
+              <path d="M12 35h22" stroke="#D42027" stroke-width="2.2" stroke-linecap="round"/>
+            </svg>
+            <span>Склад в России</span>
+          </div>
+          <div class="hero-fact">
+            <svg viewBox="0 0 44 44" fill="none" aria-hidden="true">
+              <circle cx="22" cy="20" r="15" fill="#EEF4FC"/>
+              <path d="M14 8h13l5 5v23H14V8Z" fill="#fff" stroke="#143B8D" stroke-width="2.4" stroke-linejoin="round"/>
+              <path d="M27 8v6h6" stroke="#143B8D" stroke-width="2.2" stroke-linejoin="round"/>
+              <path d="M18 19h10M18 24h10M18 29h6" stroke="#8FA5C6" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="29" cy="30" r="5.2" fill="#fff" stroke="#143B8D" stroke-width="2"/>
+              <path d="m26.5 30 1.8 1.8 3.6-4" stroke="#D42027" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Документы и счёт</span>
           </div>
         </div>
 
-        <p class="mt-8 text-sm italic text-muted">* при покупке от одного рулона</p>
-      </div>
-    </section>
-
-    <section class="px-6 py-16">
-      <div class="mx-auto grid max-w-[1440px] grid-cols-12">
-        <div class="col-span-12 grid grid-cols-1 divide-y divide-muted/30 rounded-[50px] bg-ink p-10 text-center text-white md:grid-cols-3 md:divide-x md:divide-y-0">
-          <div class="py-6">
-            <div class="display text-6xl font-semibold text-gold">28 лет</div>
-            <p class="mt-4 text-lg">На рынке текстиля</p>
-          </div>
-          <div class="py-6">
-            <div class="display text-6xl font-semibold text-gold">100%</div>
-            <p class="mt-4 text-lg">Физическое наличие в РФ</p>
-          </div>
-          <div class="py-6">
-            <div class="display text-6xl font-semibold text-gold">24 часа</div>
-            <p class="mt-4 text-lg">Скорость отгрузки</p>
-          </div>
+        <div class="hero-actions">
+          <a href="#calculator" class="hero-pill hero-pill-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brandBlue">
+            Подобрать
+          </a>
+          <a href="#catalog" class="hero-pill hero-pill-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brandBlue">
+            Каталог
+          </a>
         </div>
       </div>
     </section>
